@@ -1,7 +1,10 @@
 // submit.jsx
+
 import { useReactFlow } from "reactflow";
 import { useState } from "react";
 import { useStore } from "./store";
+
+const API_BASE_URL = "https://backend-production-72ff.up.railway.app";
 
 export const SubmitButton = () => {
   const { getNodes, getEdges } = useReactFlow();
@@ -105,7 +108,7 @@ export const SubmitButton = () => {
 
       // Send to backend
       try {
-        const response = await fetch("http://127.0.0.1:8000/pipelines/parse", {
+        const response = await fetch(`${API_BASE_URL}/pipelines/parse`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

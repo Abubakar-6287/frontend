@@ -98,7 +98,14 @@ export const useStore = create((set, get) => ({
     
     loadDraft: () => {
       try {
-        const draft = JSON.parse(localStorage.getItem('pipeline-draft'));
+        let draft = JSON.parse(localStorage.getItem('pipeline-draft'));
+        if (!(draft && draft.nodes && draft.edges)) {
+          // Fallback: try to load the most recent pipeline from 'pipelines' key
+          const pipelines = JSON.parse(localStorage.getItem('pipelines') || '[]');
+          if (pipelines.length > 0) {
+            draft = pipelines[0];
+          }
+        }
         if (draft && draft.nodes && draft.edges) {
           // Remove comments from nodes to avoid clutter
           const nodesWithoutComments = draft.nodes.map(node => ({
