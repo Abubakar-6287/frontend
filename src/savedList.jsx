@@ -105,8 +105,8 @@ export const SavedList = () => {
             <div className="text-sm text-white bg-gray-600 mb-2">
               <span className="font-semibold">Nodes:</span> {item.nodes?.length || 0} | <span className="font-semibold">Edges:</span> {item.edges?.length || 0}
             </div>
-            <details className="text-sm text-gray-700 dark:text-gray-200 cursor-pointer">
-              <summary className="font-medium hover:text-indigo-600 bg-gray-600 text-blue-300  transition-colors">View Details</summary>
+            <details className="text-sm text-gray-700    cursor-pointer">
+              <summary className="font-medium p-2 hover:text-indigo-600 hover:bg-gray-900 bg-gray-600 text-blue-300  transition-colors">View Details</summary>
               <SyntaxHighlighter jsonString={JSON.stringify(item, null, 2)} />
             </details>
           </article>
