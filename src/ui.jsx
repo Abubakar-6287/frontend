@@ -151,7 +151,7 @@ export const PipelineUI = () => {
 
     return (
         <div className="w-full rounded-lg overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700">
-          <div className="flex justify-end items-center px-4 py-2 bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+          <div className="flex justify-end items-center px-4 py-2 bg-gray-900 border-b border-gray-200 dark:border-gray-700m ">
             <span className={`text-sm font-medium ${status.color} flex items-center gap-1`}>
               {status.icon} {status.text}
             </span>

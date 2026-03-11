@@ -42,14 +42,14 @@ export const PipelineToolbar = () => {
     ];
 
     return (
-        <div className=" w-full py-3 px-4 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm transition-colors duration-300">
+        <div className=" w-full py-3 px-4 border-b border-gray-200  bg-blue-900 shadow-sm transition-colors duration-300">
             <div className="max-w-7xl mx-auto w-full flex flex-wrap lg:flex-nowrap items-center gap-2">
                 {/* Shift + Pipeline */}
                 <div className="flex items-center gap-2 shrink-0">
                     <div className="flex items-center shrink-0">
-                        <div className="w-[50px] h-8 rounded-md bg-indigo-600 text-white flex items-center justify-center font-bold text-sm">Shift</div>
+                        <div className="w-[50px] h-8 rounded-md bg-indigo-600 text-white flex items-center justify-center font-bold text-sm ">Shift</div>
                     </div>
-                    <div className="text-lg font-semibold text-gray-900 dark:text-white shrink-0">Pipeline</div>
+                    <div className="text-lg font-semibold text-gray-900 text-white shrink-0">Pipeline</div>
                 </div>
 
                 {/* Node Buttons - mobile: full width row, desktop: inline */}

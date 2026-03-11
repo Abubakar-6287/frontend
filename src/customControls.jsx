@@ -62,12 +62,11 @@ export const CustomControls = () => {
 flex flex-col md:flex-row 
 md:flex-wrap   
 items-start gap-2
-bg-white dark:bg-gray-900
 rounded-lg shadow-lg p-3
 
 transition-colors duration-300
-max-w-md  bg-white/50 dark:bg-gray-900/0 
-
+max-w-md  
+bg-gray-700
 ">
       <button
         onClick={handleZoomIn}
@@ -122,10 +121,10 @@ max-w-md  bg-white/50 dark:bg-gray-900/0
 
       <div className="w-min h-px bg-gray-300 dark:bg-gray-700 my-1"></div>
 
-      <div className="w-full px-1 py-2 bg-gray-50 dark:bg-gray-800 rounded-md 
+      <div className="w-full px-1 py-2 bg-gray-50 bg-gray-900 rounded-md 
       
       ">
-        <label className="text-xs font-semibold text-gray-900 dark:text-gray-300 block mb-2">
+        <label className="text-xs font-semibold  text-white block mb-2">
           Transparency: {opacity}%
         </label>
         <input
