@@ -88,14 +88,14 @@ export const SavedList = () => {
               <div className="flex bg-gray-600 gap-2 text-white">
                 <button
                   onClick={() => editPipeline(item)}
-                  className="text-blue-100 hover:text-blue-700 hover:bg-blue-50 dark:hover:bg-blue-900/20 p-1 rounded transition-colors"
+                  className="text-blue-100 hover:text-blue-700 hover:bg-blue-50 hover:bg-blue-900 p-1 rounded transition-colors"
                   title="Edit pipeline"
                 >
                   ✏️
                 </button>
                 <button
                   onClick={() => deletePipeline(item.id)}
-                  className="text-red-500 hover:text-red-700 hover:bg-red-50 dark:hover:bg-red-900/20 p-1 rounded transition-colors"
+                  className="text-red-500 hover:text-red-700 hover:bg-red-50 hover:bg-red-900 p-1 rounded transition-colors"
                   title="Delete pipeline"
                 >
                   🗑️
